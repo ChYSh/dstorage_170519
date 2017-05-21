@@ -68,6 +68,7 @@ int fdfs_upload_by_filename1(const char *filename, char *file_id)
 /* -------------------------------------------*/
 int fdfs_upload_by_filename(const char *filename, char *file_id)
 {
+    printf("===== filename=%s\n", filename);
 	const char *local_filename;
 	char group_name[FDFS_GROUP_NAME_MAX_LEN + 1];
 	ConnectionInfo *pTrackerServer;
